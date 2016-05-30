@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dev_port.name %>
+</p>
+
+<p>
+  <strong>Portno:</strong>
+  <%= @dev_port.portno %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @dev_port.type %>
+</p>
+
+<p>
+  <strong>Rackid:</strong>
+  <%= @dev_port.RackID %>
+</p>
+
+<p>
+  <strong>Odfid:</strong>
+  <%= @dev_port.odfid %>
+</p>
+
+<p>
+  <strong>Fiberid:</strong>
+  <%= @dev_port.fiberid %>
+</p>
+
+<%= link_to 'Edit', edit_dev_port_path(@dev_port) %> |
+<%= link_to 'Back', dev_ports_path %>
