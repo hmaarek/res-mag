@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h4>Resource Management Tool</h4>
+<p>
+  <font face="verdana" color="green">Property of Qnbn: Qatar National Broadband Network</font>
+  </p>
+<hr>
+<%= yield %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<%= link_to "Home", controller: 'welcome' %> |
+<a href="http://www.qnbn.qa">Qnbn Site</a>
+</body>
+</html>

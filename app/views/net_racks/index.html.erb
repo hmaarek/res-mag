@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Net Racks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Locationid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @net_racks.each do |net_rack| %>
+      <tr>
+        <td><%= net_rack.name %></td>
+        <td><%= net_rack.locationid %></td>
+        <td><%= link_to 'Show', net_rack %></td>
+        <td><%= link_to 'Edit', edit_net_rack_path(net_rack) %></td>
+        <td><%= link_to 'Destroy', net_rack, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Net rack', new_net_rack_path %>
