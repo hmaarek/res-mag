@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  location id:
+  <%= @location.id %>
+</p>
+
 <p>
   <strong>Name:</strong>
   <%= @location.name %>
@@ -11,5 +17,6 @@
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to "List Racks", controller: 'net_racks' %> | 
+<%= link_to "List Racks", controller: 'net_racks' %> |
+<%= link_to "Add New Rack", new_net_rack_path(@location) %> | 
 <%= link_to 'Back', locations_path %>

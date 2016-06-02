@@ -70,6 +70,6 @@ class NetRacksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def net_rack_params
-      params.require(:net_rack).permit(:name, :locationid)
+      params.require(:net_rack).permit(:name, :location_id)
     end
 end

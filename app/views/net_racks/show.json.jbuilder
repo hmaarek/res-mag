@@ -1,1 +1,1 @@
-json.extract! @net_rack, :id, :name, :locationid, :created_at, :updated_at
+json.extract! @net_rack, :id, :name, :location_id, :created_at, :updated_at
